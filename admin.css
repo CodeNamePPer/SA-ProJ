@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center-container {
+    width: 80%; 
+    max-width: 500px; 
+    padding: 15px; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.3);
+    border-radius: 8px;
+}
+
+/* สำหรับหน้าจอใหญ่ */
+.container {
+    width: 80%; 
+    max-width: 500px;
+}
+
+/* สำหรับหน้าจอกลาง */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+        max-width: 400px; 
+    }
+}
+
+/* สำหรับหน้าจอเล็ก */
+@media (max-width: 480px) {
+    .container {
+        width: 95%; 
+        max-width: 350px; 
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+a.logout-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f86161;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+a.logout-btn:hover {
+    background-color: #ff3333;
+}
+
+.Insert-form-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 80vh;
+    padding: 100px;
+}
+
+.container {
+    border: 2px solid rgb(204, 203, 203);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.3);
+}
+
+form.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input {
+    border: 1px solid black;
+    height: 70px;
+    width: 100%; /* ปรับให้ input ใช้ความกว้าง 100% */
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+    border-radius: 1px;
+    transition: .5%;
+    cursor: pointer;
+}
+
+.textbox {
+    color: gray;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.textbox::placeholder {
+    color: black;
+}
+
+.text:hover,
+.text:focus {
+    background: white;
+    color: black;
+}
+
+.ButtonLG {
+    font-size: 20px;
+    background: black;
+    color: white;
+}
+
+.ButtonLG:hover {
+    font-weight: 700;
+    color: black;
+    background: white;
+    box-shadow: 0 0 10px rgba(110, 46, 46, 0.2);
+}
+
+.containerlist {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 200px;
+}
+
+.orderlist {
+    border: 2px solid rgb(204, 203, 203);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    height: 10vw;
+    width: 10vw;
+}
+
+.sidebar-container {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+}
+
+
+.sidebar-items {
+    text-align: center;
+    font-size: 1.5rem; /* ขนาดฟอนต์พื้นฐาน */
+    text-decoration: none;
+    color: white;
+    background: black;
+    margin: 1rem;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    width: 10vw;
+    height: 7vh;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sidebar-items:hover {
+    background-color: #555;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .sidebar-items {
+        font-size: 1.2rem; /* ปรับขนาดฟอนต์สำหรับหน้าจอเล็ก */
+        width: 20vw; /* ขยายความกว้างสำหรับหน้าจอเล็ก */
+        height: 10vh; /* ขยายความสูง */
+    }
+}
+
+/* สำหรับหน้าจอใหญ่มาก */
+@media (min-width: 1200px) {
+    .sidebar-items {
+        font-size: 2rem; /* ปรับขนาดฟอนต์สำหรับหน้าจอใหญ่ */
+        width: 8vw; /* ลดความกว้างสำหรับหน้าจอใหญ่ */
+        height: 6vh; /* ลดความสูง */
+    }
+}

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.logonav {
+  display: block;
+  margin: 20px auto;
+}
+
+.nav-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-profile-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ButtonLG {
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.ButtonLG:hover {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(110, 46, 46, 0.2);
+}
+
+.order {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.order h2 {
+  text-align: center;
+  color: #444;
+}
+
+.order p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.order div {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #444;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+
+.form-container {
+  width: 400px;
+  margin: 20px auto; /* กึ่งกลางหน้าจอ */
+  padding: 20px;
+  border: 1px solid #ccc; /* เส้นขอบ */
+  border-radius: 8px; /* มุมโค้งมน */
+  background-color: #f9f9f9; /* พื้นหลัง */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* เงากล่อง */
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
